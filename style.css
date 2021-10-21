@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant&display=swap");
+
+:root {
+  --background-color: #ffe01b;
+  --font-family: "Cormorant", serif;
+  --font-size: 20px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: var(--font-family);
+  min-height: 100%;
+  font-size: var(--font-size);
+}
+
+main {
+  --background-color: white;
+  background-color: var(--background-color);
+  width: 1350px;
+  min-height: 100%;
+}
+
+.signup {
+  width: 570px;
+}
+
+h1 {
+  --font-size: 60px;
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+label {
+  font-weight: 800;
+  display: inline-block;
+  margin: 0 0 10px 0;
+}
+
+input {
+  width: 555px;
+  height: 46px;
+  padding: 0 10px 0 10px;
+}
+
+.field-set {
+  margin: 0 0 25px 0;
+}
+.password-label {
+  gap: 400px;
+}
+
+.visibility {
+  cursor: pointer;
+}
+
+.material-icons {
+  margin: 0 15px 0 15px;
+}
+
+form,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  height: calc(100px - var(--font-size));
+  padding: 0 0 0 15px;
+}
+
+.flex {
+  display: flex;
+  justify-content: flex-start;
+}
+
+#create-account {
+  width: 300px;
+  height: 50px;
+  margin: 0 30px 0 0;
+}
+
+#no-notification {
+  width: 50px;
+  height: 50px;
+  margin: -10px 20px 0 0;
+}
+
+.success {
+  width: 577px;
+  height: 50px;
+  --background-color: #d8eacc;
+  background-color: var(--background-color);
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.field-help {
+  transition: all 0.25s ease-in-out 0s;
+  display: block;
+  opacity: 0;
+  max-height: 0;
+  --font-size: 17px;
+  font-size: var(--font-size);
+}

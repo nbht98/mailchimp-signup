@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/youtube.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>
+        Signup | Mailchimp
+    </title>
+
+</head>
+
+<body>
+    <main>
+        <img src="images/mc-freddie-dark.svg" width="38" height=38>
+        <div>
+            <section>
+                <div class="signup">
+                    <h1>
+                        Welcome to Mailchimp
+                    </h1>
+                    <p>
+                        Find your people. Engage your customers. Build your brand. Do it all with Mailchimp’s
+                        Marketing Platform. Already have an account? <a href="/">Log in</a>
+                    </p>
+                    <form id="signup-form">
+                        <fieldset>
+                            <div class="field-set">
+                                <label>
+                                    Email
+                                </label>
+                                <input id="email" type="email" name="email" autofocus="autofocus" value="">
+                            </div>
+                            <div class="field-set">
+                                <label>
+                                    Username
+                                </label>
+                                <input id="username" type="text" name="username" autofocus="autofocus" value="">
+                                <div class="field-help">
+                                    Choose a username that contains only letters and numbers, or use your email address. This is for login only. 
+                                </div>
+                            </div>
+                            <div class="field-set">
+                                <div class="password-label flex">
+                                    <label>
+                                        Password
+                                    </label>
+                                    <div class="visibility flex">
+                                        <span id="visibility-icon" class="material-icons">
+                                            visibility
+                                        </span>
+                                        <div id="show">Hide</div>
+                                    </div>
+
+                                </div>
+                                <input id="password" type="password" name="password" autofocus="autofocus" value="">
+                                <div>
+                                    <ul>
+                                        <li id="letter">
+                                            One lowercase character
+                                        </li>
+                                        <li id="capital">
+                                            One uppercase character
+                                        </li>
+                                        <li id="number">
+                                            One number
+                                        </li>
+                                        <li id="special">
+                                            One special character
+                                        </li>
+                                        <li id="length">
+                                            8 characters minimum
+                                        </li>
+
+                                    </ul>
+                                    <div class="success flex hide">
+                                        <span class="material-icons">
+                                            check_circle
+                                        </span>
+                                        <div>
+                                            Your password is secure and you're all set!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex">
+                                <button id="create-account" disabled>
+                                    Sign Up
+                                </button>
+
+                                <input id="no-notification" type="checkbox">
+
+                                </input>
+                                I don't want to receive updates from Mailchimp related to marketing best practices,
+                                product and feature updates, and promotions
+                            </div>
+                        </fieldset>
+
+                        <p>By clicking the "Sign Up" button, you are creating a Mailchimp account, and you agree to
+                            Mailchimp's <a href="/">Terms of Use</a> and <a href="/">Privacy Policy</a>. </p>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+    <aside>
+
+    </aside>
+</body>
+<script src="script.js"></script>
+
+</html>
