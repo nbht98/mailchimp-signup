@@ -41,22 +41,23 @@ const validate = () => {
   let isSuccess = true;
   // Validate special character
   let specials = /[^A-Za-z0-9]/g;
-  isSuccess = isSuccess && checkValid(password, specialCharacter, specials);
-
+  isSuccess = checkValid(password, specialCharacter, specials) && isSuccess;
+  // console.log(checkValid(password, specialCharacter, specials))
   // Validate lowercase letters
   let lowerCaseLetters = /[a-z]/g;
-  isSuccess = isSuccess && checkValid(password, letter, lowerCaseLetters);
+  isSuccess = checkValid(password, letter, lowerCaseLetters) && isSuccess;
+  // console.log(checkValid(password, letter, lowerCaseLetters))
 
   // Validate capital letters
   let upperCaseLetters = /[A-Z]/g;
-  isSuccess = isSuccess && checkValid(password, capital, upperCaseLetters);
+  isSuccess = checkValid(password, capital, upperCaseLetters) && isSuccess;
 
   // Validate numbers
   let numbers = /[0-9]/g;
-  isSuccess = isSuccess && checkValid(password, number, numbers);
+  isSuccess = checkValid(password, number, numbers) && isSuccess;
 
   // Validate length
-  isSuccess = isSuccess && checkValid(password, length);
+  isSuccess = checkValid(password, length) && isSuccess;
 
   const success = document.querySelector(".success");
   const ul = document.querySelector("ul");
@@ -90,3 +91,8 @@ username.addEventListener("focusout", () => {
   visibility.style.opacity = 0;
   visibility.style.margin = "10px 0 0 0";
 });
+
+
+window.onload= () => {
+  document.getElementById("create-account").disabled=true;
+}
